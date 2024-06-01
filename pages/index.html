@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body id="top">
+
+  <header class="header principal" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="../assets/images/gaming_store-logo.png" width="110" height="53" alt="unigine home">
+      </a>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link" data-nav-link>Inicio</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#noticias" class="navbar-link" data-nav-link>Noticias</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#contactenos" class="navbar-link" data-nav-link>Contacto</a>
+          </li>
+
+          <li>
+            <form class="search-form" action="/search" method="GET">
+              <input type="text" name="q" placeholder="Buscar...">
+              <button class ='search-button' type="submit">
+                <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+                Buscar
+              </button>
+              
+            </form>
+          </li>
+
+          <li>
+            <button class="btn-sign-out" id="apiButton">Consulta API</button>
+          </li>
+
+          <li>
+            <button class="btn-sign-out" id="signOut">Cerrar Sesión</button>
+          </li>
+
+        </ul>
+      </nav>
+
+
+      <button class="nav-volver-btn" aria-label="volver menu" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+      </button>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+     <!-- INICIO PAGINA WEB -->
+
+     <div class="inicio has-before" id="home">
+      <div class="container">
+    
+        <!--<p class="section-subtitulo">Enjoy The Games</p>-->
+    
+        <h1 class="h1 titulo inicio-titulo">Tienda de juegos <br> para verdaderos GAMERS!</h1>
+    
+        <div class="box-container">
+
+          <div class="box">
+            <img src="../assets/images/Juegos/1.jpg" alt="juego">
+            <div class="box-overlay">
+              <h2>Octopath Traveler 2</h2>
+            </div>
+          </div>
+
+          <div class="box">
+            <img src="../assets/images/Juegos/2.jpg" alt="juego">
+            <div class="box-overlay">
+              <h2>FC 24</h2>
+            </div>
+          </div>
+
+          <div class="box">
+            <img src="../assets/images/Juegos/3.jpg" alt="juego">
+            <div class="box-overlay">
+              <h2>Resident Evil 4</h2>
+            </div>
+          </div>
+
+          <div class="box">
+            <img src="../assets/images/Juegos/4..jpg" alt="juego">
+            <div class="box-overlay">
+              <h2>God Of War Ragnarok</h2>
+            </div>
+          </div>
+
+          <div class="box">
+            <img src="../assets/images/Juegos/5.jpg" alt="juego">
+            <div class="box-overlay">
+              <h2>Crash Team Rumble</h2>
+            </div>
+          </div>
+
+          <div class="box">
+            <img src="../assets/images/Juegos/6.jpg" alt="juego">
+            <div class="box-overlay">
+              <h2>FarCry 6</h2>
+            </div>
+          </div>
+
+          <div class="box">
+            <img src="../assets/images/Juegos/7.jpg" alt="juego">
+            <div class="box-overlay">
+              <h2>GTA 5</h2>
+            </div>
+          </div>
+
+          <div class="box">
+            <img src="../assets/images/Juegos/8.jpg" alt="juego">
+            <div class="box-overlay">
+              <h2>Howgarts Legacy</h2>
+            </div>
+          </div>
+
+          <div class="box">
+            <img src="../assets/images/Juegos/9.jpg" alt="juego">
+            <div class="box-overlay">
+              <h2>Gran Turismo 7</h2>
+            </div>
+          </div>
+
+          <div class="box">
+            <img src="../assets/images/Juegos/10.jpg" alt="juego">
+            <div class="box-overlay">
+              <h2>God Of War</h2>
+            </div>
+          </div>
+
+          <div class="box">
+            <img src="../assets/images/Juegos/11.jpg" alt="juego">
+            <div class="box-overlay">
+              <h2>Persona 3 Reload</h2>
+            </div>
+          </div>
+
+          <div class="box">
+            <img src="../assets/images/Juegos/12.jpg" alt="juego">
+            <div class="box-overlay">
+              <h2>Naruto x Boruto Ultimate Ninja Storm Connections</h2>
+            </div>
+          </div>
+
+
+          
+    
+          
+          
+        </div>
+    
+      </div>
+    </div>
+    
+    
+
+      <!-- NOTICIAS DE VIDEOJUEGOS-->
+
+      <section class="section noticias" aria-label="ultimas noticias" id="noticias">
+        <div class="container">
+
+          <p class="section-subtitulo" >¿Qué esta pasando en el mundo GAMER?</p>
+
+          <h2 class="h2 section-titulo" >
+            Noticias y <span class="span">más</span>
+          </h2>
+
+          <p class="section-text" >
+            Encontra acá las noticias más relevantes sobre próximos lanzamientos y descubre nuevos juegos!
+          </p>
+
+          <ul class="noticias-list">
+
+            <li >
+              <div class="noticias-carta">
+
+                <figure class="carta-banner img-contenedor" style="--width: 600; --height: 400;">
+                  <img src="../assets/images/empresas-nuevas.png" width="600" height="400" loading="lazy"
+                    alt="Innovative Business All Over The World." class="img-cover">
+                </figure>
+
+                <div class="carta-content">
+
+                  <a href="#" class="carta-tag">Empresas</a>
+
+                  <ul class="carta-meta-list">
+
+                    <li class="carta-meta-item">
+                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+
+                      <time class="carta-meta-text" datetime="2022-01-01">Agosto 10 2024</time>
+                    </li>
+
+                    <li class="carta-meta-item">
+                      <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+
+                      <p class="carta-meta-text">Franco Monti</p>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h3">
+                    <a href="#" class="carta-titulo">
+                      Nuevas empresas entran al mercado de los videojuegos.</a>
+                  </h3>
+
+                  <p class="carta-text">
+                     El desarrollo de videojuegos está en su máximo auge, cada vez más empresas se interesan en invertir y crear un nuevo juego
+                  </p>
+
+                  <a href="#" class="link has-before">Leer más</a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li >
+              <div class="noticias-carta">
+
+                <figure class="carta-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="../assets/images/juegos-nuevos.jpg" width="600" height="400" loading="lazy"
+                    alt="How To Start Initiating An Startup In Few Days." class="img-cover">
+                </figure>
+
+                <div class="carta-content">
+
+                  <a href="#" class="carta-tag">Juegos Nuevos</a>
+
+                  <ul class="carta-meta-list">
+
+                    <li class="carta-meta-item">
+                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+
+                      <time class="carta-meta-text" datetime="2022-01-01">AGOSTO 10 2024</time>
+                    </li>
+
+                    <li class="carta-meta-item">
+                      <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+
+                      <p class="carta-meta-text">FRANCO MONTI</p>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h3">
+                    <a href="#" class="carta-titulo">Lista de nuevos juegos destacados.</a>
+                  </h3>
+
+                  <p class="carta-text">
+                    Aca encontrarás todos los juegos nuevos recién salidos al mercado y los próximos a salir en el Q3 de 2024
+                  </p>
+
+                  <a href="#" class="link has-before">Leer más</a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li >
+              <div class="noticias-carta">
+
+                <figure class="carta-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="../assets/images/financiero.png" width="600" height="400" loading="lazy"
+                    alt="Financial Experts Support Help You To Find Out." class="img-cover">
+                </figure>
+
+                <div class="carta-content">
+
+                  <a href="#" class="carta-tag">FINANCIEROS</a>
+
+                  <ul class="carta-meta-list">
+
+                    <li class="carta-meta-item">
+                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+
+                      <time class="carta-meta-text" datetime="2022-01-01">AGOSTO 10 2024</time>
+                    </li>
+
+                    <li class="carta-meta-item">
+                      <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+
+                      <p class="carta-meta-text">FRANCO MONTI</p>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h3">
+                    <a href="#" class="carta-titulo">Invertir en videojuegos ¿es posible?</a>
+                  </h3>
+
+                  <p class="carta-text">
+                    En este nota encontrarás información sobre  cómo y donde poder invertir en el mercado de los videojugos
+                  </p>
+
+                  <a href="#" class="link has-before">Leer más</a>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+  <!-- FOOTER -->
+
+  <footer class="footer" id="contactenos">
+
+    <div class="section footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <img src="../assets/images/gaming_store-logo.png" width="150" height="73" loading="lazy" alt="Unigine logo">
+          </a>
+
+          <!-- <p class="footer-text">
+            Desde GAMING STORE nos comprometos a siempre ofrecer los mejores juegos del mercado y estar actualizados con las noticias del ambiente
+          </p> -->
+
+          
+
+        </div>
+
+        <div class="footer-list">
+
+          <p class="titulo footer-list-titulo has-after">Links Útiles</p>
+
+          <ul>
+
+            <li>
+              <a href="#" class="footer-link">Centro de ayuda</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Políticas de privacidad</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Términos de uso</a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-list">
+
+          <p class="titulo footer-list-titulo has-after">Contactanos</p>
+
+          <div class="contact-item">
+            <span class="span">Dirección</span>
+
+            <address class="contact-link">
+              Saavedra 1030 Capital Federal
+            </address>
+          </div>
+
+          <div class="contact-item">
+            <span class="span">Correo</span>
+
+            <a href="mailto:info@gamingstore.com" class="contact-link">info@gamingstore.com</a>
+          </div>
+
+          <div class="contact-item">
+            <span class="span">Teléfono</span>
+
+            <a href="tel:+12345678910" class="contact-link">+54 9 11 1111-1111</a>
+          </div>
+
+        </div>
+
+        <div class="footer-list">
+
+          <p class="titulo footer-list-titulo has-after">Suscribite</p>
+
+          <form action="./index.html" method="get" class="footer-form">
+            <input type="email" name="email_address" required placeholder="Correo...." autocomplete="off"
+              class="input-field">
+
+            <button type="button" class="btn" id="btn-log-out" data-btn>Suscribirse</button>
+          </form>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <!-- <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-x"></ion-icon>
+              </a>
+            </li> -->
+
+             <!-- Se saca link porque la librería no tiene actualizado el ícono de X (ex twitter) -->
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2024 GAMING STORE. Todos los derechos reservados
+        </p>
+
+      </div>
+    </div>
+
+  </footer>
+
+ <!-- BOTON DE SUBIR-->
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="arrow-up-outline" aria-hidden="true"></ion-icon>
+  </a>
+
+  <!-- MOUSE DE COLOR :)-->
+
+  <div class="cursor" data-cursor></div>
+
+  <!-- SCRIP DE JS-->
+  <script src="../assets/js/script.js"></script>
+
+  <!-- ICONOS REDES SOCIALES-->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  
+</body>
+
+</html>
