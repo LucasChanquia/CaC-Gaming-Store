@@ -111,7 +111,7 @@ const logOutButton = document.getElementById('signOut');
 logOutButton.addEventListener('click', function() {
 
   console.log('me estoy ejecutando')
-    window.location.href = '../../../GamingStore-java.github.io/index.html';
+    window.location.href = '../../../CaC-Gaming-Store/index.html';
   
 });
  const API= 'https://www.giantbomb.com/api/games/?api_key='
