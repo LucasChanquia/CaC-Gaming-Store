@@ -111,22 +111,51 @@ const logOutButton = document.getElementById('signOut');
 logOutButton.addEventListener('click', function() {
 
   console.log('me estoy ejecutando')
-    window.location.href = '../../../CaC-Gaming-Store/index.html';
+    window.location.href = '../../../GamingStore-java.github.io/index.html';
   
 });
- const API= 'https://www.giantbomb.com/api/games/?api_key='
- const APICLIENT = 'df90b64922c95c7c77ce166039d8b3849d832ea0'
- const apiButton = document.getElementById('apiButton')
 
  document.getElementById('apiButton').addEventListener('click', async function(){
+
+    const url = 'https://mmo-games.p.rapidapi.com/games';
+    const options = {
+      method: 'GET',
+      headers: {
+        'X-RapidAPI-Key': '7e9392868emsh7ca5b5fbf7bef77p105546jsn8c7ef28dc064',
+        'X-RapidAPI-Host': 'mmo-games.p.rapidapi.com'
+      }
+    };
+    
     try {
-      await fetch(`${API}${APICLIENT}&limit=20&format=json`)
-      .then((res) =>res.json())
-      .then(data =>{
-        console.log(data);
-      })
-    } catch (error) {
-      console.error(error)
-    }
- });
+      const response = await fetch(url, options);
+      const result = await response.json();
+      const primerosResultados = result.slice(0, 20)
+      const gamesContainer = document.getElementById('games-container');
+
+              primerosResultados.forEach(game => {
+                    const box = document.createElement('div');
+                    box.className = 'box';
+
+                    const img = document.createElement('img');
+                    img.src = game.thumbnail;
+                    img.alt = game.title;
+
+                    const overlay = document.createElement('div');
+                    overlay.className = 'box-overlay';
+
+                    const title = document.createElement('h2');
+                    title.textContent = game.title;
+
+            
+
+                    overlay.appendChild(title);
+                    box.appendChild(img);
+                    box.appendChild(overlay);
+                    gamesContainer.appendChild(box);
+                });
+            } catch (error) {
+                alert('ocurrió un error en la consulta');
+            }
+        });
+
 

@@ -175,6 +175,10 @@ body {
   text-transform: uppercase;
 }
 
+.gamelist{
+  margin-top: 25px;
+}
+
 .btn {
   position: relative;
   background-image: var(--gradient-1);
