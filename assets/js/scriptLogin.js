@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
   
       // Redirigir si ambos campos son válidos
       if (isValid) {
-        window.location.href = '/CaC-Gaming-Store/pages/index.html';
+        window.location.href = '/pages/index.html';
       }
     });
   
